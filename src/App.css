@@ -1,0 +1,159 @@
+body {
+  background-color: #0d1a26;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  width: 350px;
+  height: 596px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: var(--very-dark-blue-card-bg, #15263f);
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  padding-left: 24px;
+  padding-top: 24px;
+  width: 302px;
+  height: 302px;
+  flex-shrink: 0;
+}
+
+.overlay i {
+  color: #00fff7;
+}
+
+.card-content h2,
+.card-content p {
+  margin: 0 0 10px;
+  transition: color 0.2s ease;
+}
+
+.card-title {
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading */
+  font-family: Outfit;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.card-description {
+  padding-left: 24px;
+  padding-top: 16px;
+  color: var(--Soft-Blue, #8bacd9);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Body */
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 144.444% */
+  width: 302px;
+}
+
+.card-title:hover {
+  cursor: pointer;
+
+  color: var(--Cyan, #00fff8);
+}
+
+.card-description:hover {
+  cursor: pointer;
+
+  color: var(--Cyan, #00fff8);
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+.price {
+  cursor: pointer;
+
+  padding-left: 24px;
+  padding-top: 24px;
+  color: var(--Cyan, #00fff8);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Caption (Bold) */
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.time {
+  position: relative;
+  left: -30px;
+  top: 12px;
+  color: var(--Soft-Blue, #8bacd9);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Caption */
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.creator {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 22px;
+  color: var(--Soft-Blue, #8bacd9);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.creator img {
+  width: 33px;
+  height: 33px;
+  flex-shrink: 0;
+  border-radius: 33px;
+  border: 1px solid var(--White, #fff);
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.creator-name {
+  position: relative;
+  left: -10px;
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Caption */
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.creator-name:hover {
+  cursor: pointer;
+  color: var(--Cyan, #00fff8);
+}
