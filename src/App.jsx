@@ -1,4 +1,6 @@
 import "./App.css";
+import MainPhoto from "./assets/Rectangle Copy.png";
+import Oval from "./assets/Oval.svg";
 
 function App() {
   return (
@@ -11,11 +13,7 @@ function App() {
       <body>
         <div className="card">
           <div className="card-image">
-            <img
-              className="main-image"
-              src="src/assets/Rectangle Copy.png"
-              alt="Equilibrium"
-            />
+            <img className="main-image" src={MainPhoto} alt="Equilibrium" />
           </div>
           <div className="card-content">
             <h2 className="card-title">Equilibrium #3429</h2>
@@ -27,7 +25,7 @@ function App() {
               <span className="time">3 days left</span>
             </div>
             <div className="creator">
-              <img src="src/assets/Oval.svg" alt="Creator" />
+              <img src={Oval} alt="Creator" />
               Creation of
               <span className="creator-name">Jules Wyvern</span>
             </div>
